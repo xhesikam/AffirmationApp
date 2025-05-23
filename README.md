@@ -8,6 +8,10 @@ For my project, I decided to follow a tutorial on a ToDo app, however I decided 
 ## Techinologies used
 NEXTJS, PRISMA, MONGODB, TYPESCRIPT, REACT, TAILWIND
 
+### ✨ Full CRUD features ✨
+
+![Screen Recording 2025-05-22 at 10 00 58 PM](https://github.com/user-attachments/assets/d7bca9b0-fb6e-42bf-851b-d1fa491f3e77)
+
 ## BACKEND
 The affirmation item included an id which was type string. The title which was the affirmation that the user typed in (also a string). It has a ? after string because that means that it could be empty. wasSaid is a boolean type meaning it can either be true or false (true when a user check off that they have said their affirmation. It should be noted that it is false by default). Lastly the createdAt so we can keep track of when each affrimation was created.
 
@@ -24,7 +28,6 @@ Prisma was used to connect to mongoDB and edit the affirmations being stored in 
 ## Key Achievments
 While building an affirmation app, I learned how to integrate Prisma for seamless database management, use Tailwind CSS for responsive UI design, and apply JavaScript to create dynamic, interactive features.
 
-### ✨ Full CRUD features ✨
 
 ## What I learned:
 I had never worked with prisma and MongoDB before, but they were very useful. I was able to use server actions in order to edit the affirmations. I also learned how useful tailwind is in styling elements.
