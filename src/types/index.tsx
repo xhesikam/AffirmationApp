@@ -21,7 +21,7 @@ export interface inputProps {
     bgColor?: string;
   }
   
-  export interface affrimationProps {
+  export interface affirmationProps {
     id: string;
     title?: string | null;
     wasSaid: boolean;

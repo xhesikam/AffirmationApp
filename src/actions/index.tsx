@@ -1,6 +1,5 @@
 "use server";
 
-import AddAffirm from "@/components/affirmations/AddAffirm";
 import { prisma } from "@/utils/prisma";
 import { revalidatePath } from "next/cache";
 
@@ -27,7 +26,7 @@ export async function changeStatus(formData: FormData) {
     },
   });
 
-  const updateStatus = !affirmation?.isCompleted;
+  const updateStatus = !affirmation?.wasSaid;
 
   await prisma.affirmation.update({
     where: {
@@ -35,6 +34,18 @@ export async function changeStatus(formData: FormData) {
     },
     data: {
       wasSaid: updateStatus,
+    },
+  });
+
+  revalidatePath("/");
+}
+
+export async function deleteAffirm(formData: FormData) {
+  const inputId = formData.get("inputId") as string;
+
+  await prisma.affirmation.delete({
+    where: {
+      id: inputId,
     },
   });
 
