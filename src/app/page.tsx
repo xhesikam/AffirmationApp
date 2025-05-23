@@ -1,3 +1,4 @@
+import AddAffirm from "@/components/affirmations/AddAffirm";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
 </h1>
 
     <div className="flex justidy-center felx-col iterms-center">
-      {/* input to do */}
+      <AddAffirm/>
       {/* map to do */}
     </div>
    </div>
