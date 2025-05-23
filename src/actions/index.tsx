@@ -20,7 +20,7 @@ export async function createAffrim(formData: FormData) {
 
 export async function changeStatus(formData: FormData) {
   const inputId = formData.get("inputId") as string;
-  const todo = await prisma.affirmation.findUnique({
+  const affirmation = await prisma.affirmation.findUnique({
     where: {
       id: inputId,
     },
