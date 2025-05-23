@@ -38,3 +38,5 @@ Prisma set up just required the person install prisma you run `npm i prisma --sa
 To connect prisma to mongoDB you run `npx prisma init --datasource-provider mongoDB`
 
 The user sets up the database url after creating a cluster on mongodb.com
+
+Video inspiration: https://www.youtube.com/watch?v=9OoKXOq7ENo
