@@ -13,10 +13,17 @@ export interface inputProps {
     onSubmit?: () => void;
   }
 
-export interface buttonProps {
+  export interface buttonProps {
     type?: "button" | "submit" | "reset";
     text: string | ReactNode;
     onClick?: () => void;
     actionButton?: boolean;
     bgColor?: string;
+  }
+  
+  export interface affrimationProps {
+    id: string;
+    title?: string | null;
+    wasSaid: boolean;
+    createdAt?: Date;
   }
